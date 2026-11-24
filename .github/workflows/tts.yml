@@ -1,7 +1,7 @@
 name: Make voices
 on:
   push:
-    paths: ["jobs/**"]
+    paths: ["jobs/**", "tools/**", ".github/workflows/**"]
   workflow_dispatch:
 permissions:
   contents: write

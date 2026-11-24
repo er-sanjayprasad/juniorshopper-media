@@ -1,0 +1,4 @@
+WARN voices list failed: HTTP 401: b'{"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission voices_read to execute this operation.","status":"missing_permissions","request_id":"4b768c312badf8e888433edbd1b9426b"}}'
+made audio/test-voices/g1.mp3
+made audio/test-voices/p1.mp3
+ERROR test-voices n1 HTTP 402: b'{"detail":{"type":"payment_required","code":"paid_plan_required","message":"Free users cannot use library voices via the API. Please upgrade your subscription to use this voice.","status":"payment_required","request_id":"5150ea030db03ec5cc59b80c853965df"}}'

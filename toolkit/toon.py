@@ -7,7 +7,8 @@ SKIN = (246, 205, 160); SKIN_SH = (228, 180, 136)
 def L(a, b, t): return a + (b - a) * t
 
 class Char:
-    def __init__(self, gender="boy", shirt=(176, 120, 205), bottom=(40, 42, 60), hair="spiky", s=1.0, skin=SKIN, ribbon=(255, 255, 255), glasses=False, wide=1.0, adult=False):
+    def __init__(self, gender="boy", shirt=(176, 120, 205), bottom=(40, 42, 60), hair="spiky", s=1.0, skin=SKIN, ribbon=(255, 255, 255), glasses=False, wide=1.0, adult=False, hc=(22, 22, 26), tie=True):
+        self.hc = hc; self.tie = tie
         self.gender, self.shirt, self.bottom, self.hair, self.s, self.skin, self.ribbon, self.glasses, self.wide, self.adult = gender, shirt, bottom, hair, s, skin, ribbon, glasses, wide, adult
 
 def _poly(d, pts, fill, w=5):
@@ -18,22 +19,41 @@ def _ell(d, box, fill, w=5): d.ellipse(box, fill=fill, outline=INK, width=w)
 def draw(d, c, x, y, expr="happy", talk=0.0, blink=False, look=(0, 0), arms=("down", "down"), t=0.0, brow=0, walk=None, prop=None):
     """x,y = feet centre. talk: 0..1 mouth openness. expr: happy, sad, angry, surprised, worried, laugh, smug"""
     s = c.s; w = max(3, int(5 * s))
-    hh = 600 * s                      # total height
-    feet = y; hip = y - 230 * s; neck = y - 400 * s
-    head_c = (x, y - 500 * s); HR = 118 * s
-    # legs (socks + shoes)
+    walking = walk is not None
+    ph = (walk or 0.0) * math.pi * 2
+    bob = abs(math.sin(ph)) * 12 * s if walking else 0.0
+    breath = math.sin(t * 2.3 + x * 0.01) * 3 * s
+    yb = y - bob
+    feet = y; hip = yb - 230 * s; neck = yb - 400 * s + breath * 0.5
+    nod = abs(math.sin(t * 7)) * 5 * s if talk > 0.05 else 0.0
+    head_c = (x + (math.sin(t * 3) * 3 * s if talk > 0.05 else 0), yb - 500 * s + breath + nod); HR = 118 * s
+    if talk > 0.05 and tuple(arms) == ("down", "down"):
+        arms = ("down", "gesture")
+    # legs: thigh + shin with knee, sock and shoe; swing when walking
     for side in ((-1, 1) if not c.adult else ()):
-        lx = x + side * 34 * s
-        lift = (max(0, math.sin(walk * math.pi * 2 * (1 if side > 0 else -1))) * 30 * s) if walk is not None else 0
-        feet = y - lift
-        d.rectangle([lx - 16 * s, hip, lx + 16 * s, feet - 70 * s], fill=c.skin, outline=INK, width=w)
-        d.rectangle([lx - 18 * s, feet - 80 * s, lx + 18 * s, feet - 28 * s], fill=(250, 250, 250), outline=INK, width=w)
-        d.line([(lx - 16 * s, feet - 66 * s), (lx + 16 * s, feet - 66 * s)], fill=(40, 40, 50), width=w)
-        _ell(d, [lx - 30 * s + side * 6 * s, feet - 44 * s, lx + 34 * s + side * 6 * s, feet + 4 * s], (20, 20, 22), w)
-    feet = y
+        hp = (x + side * 32 * s, hip + 10 * s)
+        if walking:
+            phase = ph + (0 if side > 0 else math.pi)
+            a = math.sin(phase) * 0.18
+            lift = max(0.0, math.sin(phase)) * 42 * s
+        else:
+            a, lift = 0.0, 0.0
+        Lt = (y - 22 * s) - hp[1]
+        ank = (hp[0] + Lt * math.sin(a) * 0.9 + side * 4 * s, y - 22 * s - lift)
+        knee = ((hp[0] + ank[0]) / 2 + side * lift * 0.35, (hp[1] + ank[1]) / 2 - lift * 0.15)
+        lw_ = int(32 * s)
+        d.line([hp, knee, ank], fill=INK, width=lw_ + 2 * w, joint="curve"); d.line([hp, knee, ank], fill=c.skin, width=lw_, joint="curve")
+        # sock
+        dx, dy = ank[0] - knee[0], ank[1] - knee[1]; ln = max(1, math.hypot(dx, dy))
+        sk = (ank[0] - dx / ln * 50 * s, ank[1] - dy / ln * 50 * s)
+        d.line([sk, ank], fill=INK, width=lw_ + 2 * w + 2); d.line([sk, ank], fill=(250, 250, 250), width=lw_ + 2)
+        # shoe
+        fx = ank[0] + 12 * s
+        _ell(d, [fx - 34 * s, ank[1] - 16 * s, fx + 34 * s, ank[1] + 24 * s], (20, 20, 22), w)
     # bottom: shorts or skirt
     if c.adult:
-        _poly(d, [(x - 70 * s, hip - 60 * s), (x + 70 * s, hip - 60 * s), (x + 110 * s, feet - 10 * s), (x - 110 * s, feet - 10 * s)], c.bottom, w)
+        sw_ = math.sin(ph) * 14 * s if walking else 0
+        _poly(d, [(x - 70 * s, hip - 60 * s), (x + 70 * s, hip - 60 * s), (x + 110 * s + sw_, feet - 10 * s), (x - 110 * s + sw_, feet - 10 * s)], c.bottom, w)
         for k in range(-3, 4): d.line([(x + k * 14 * s, hip - 40 * s), (x + k * 30 * s, feet - 14 * s)], fill=INK, width=max(2, w - 3))
         d.line([(x - 110 * s, feet - 40 * s), (x + 110 * s, feet - 40 * s)], fill=(250, 200, 60), width=int(14 * s))
     elif c.gender == "girl":
@@ -42,8 +62,8 @@ def draw(d, c, x, y, expr="happy", talk=0.0, blink=False, look=(0, 0), arms=("do
     else:
         _poly(d, [(x - 72 * s, hip - 50 * s), (x + 72 * s, hip - 50 * s), (x + 76 * s, hip + 20 * s), (x + 4 * s, hip + 20 * s), (x, hip - 10 * s), (x - 4 * s, hip + 20 * s), (x - 76 * s, hip + 20 * s)], c.bottom, w)
     # belt
-    if not c.adult: d.rectangle([x - 72 * s, hip - 62 * s, x + 72 * s, hip - 44 * s], fill=(25, 25, 28), outline=INK, width=w)
-    if not c.adult: d.rectangle([x - 14 * s, hip - 64 * s, x + 14 * s, hip - 42 * s], outline=(200, 200, 210), width=max(2, w - 1))
+    if not c.adult and c.tie: d.rectangle([x - 72 * s, hip - 62 * s, x + 72 * s, hip - 44 * s], fill=(25, 25, 28), outline=INK, width=w)
+    if not c.adult and c.tie: d.rectangle([x - 14 * s, hip - 64 * s, x + 14 * s, hip - 42 * s], outline=(200, 200, 210), width=max(2, w - 1))
     # torso / shirt
     wd = c.wide
     if wd > 1.05:
@@ -55,7 +75,9 @@ def draw(d, c, x, y, expr="happy", talk=0.0, blink=False, look=(0, 0), arms=("do
     # arms
     def arm(side, pose):
         sh = (x + side * 66 * s, neck + 18 * s)
-        poses = {"down": (sh[0] + side * 24 * s, sh[1] + 190 * s), "point": (sh[0] + side * 170 * s, sh[1] + 20 * s - 60 * s),
+        swing = (math.sin(ph + (math.pi if side > 0 else 0)) * 50 * s) if walking else math.sin(t * 2.3 + side) * 3 * s
+        poses = {"down": (sh[0] + side * 24 * s + swing, sh[1] + 190 * s),
+                 "gesture": (sh[0] + side * 95 * s, sh[1] + 70 * s + math.sin(t * 5) * 22 * s), "point": (sh[0] + side * 170 * s, sh[1] + 20 * s - 60 * s),
                  "up": (sh[0] + side * 60 * s, sh[1] - 170 * s), "hip": (sh[0] + side * 20 * s, sh[1] + 150 * s),
                  "wave": (sh[0] + side * 90 * s, sh[1] - 150 * s + math.sin(t * 12) * 20 * s), "chin": (x + side * 40 * s, head_c[1] + HR * 0.9),
                  "hold": (x + side * 40 * s, sh[1] + 110 * s), "shrug": (sh[0] + side * 110 * s, sh[1] - 40 * s)}
@@ -76,7 +98,7 @@ def draw(d, c, x, y, expr="happy", talk=0.0, blink=False, look=(0, 0), arms=("do
     if not c.adult:
       _poly(d, [(x - 50 * s, neck - 6 * s), (x, neck + 34 * s), (x - 14 * s, neck + 50 * s), (x - 62 * s, neck + 16 * s)], c.shirt, w)
       _poly(d, [(x + 50 * s, neck - 6 * s), (x, neck + 34 * s), (x + 14 * s, neck + 50 * s), (x + 62 * s, neck + 16 * s)], c.shirt, w)
-      _poly(d, [(x - 12 * s, neck + 32 * s), (x + 12 * s, neck + 32 * s), (x + 18 * s, neck + 150 * s), (x, neck + 172 * s), (x - 18 * s, neck + 150 * s)], (40, 40, 60), w)
+      if c.tie: _poly(d, [(x - 12 * s, neck + 32 * s), (x + 12 * s, neck + 32 * s), (x + 18 * s, neck + 150 * s), (x, neck + 172 * s), (x - 18 * s, neck + 150 * s)], (40, 40, 60), w)
     # neck
     d.rectangle([x - 22 * s, neck - 40 * s, x + 22 * s, neck + 6 * s], fill=c.skin, outline=INK, width=w)
     hx, hy = head_c
@@ -94,24 +116,24 @@ def draw(d, c, x, y, expr="happy", talk=0.0, blink=False, look=(0, 0), arms=("do
                (hx + HR * 0.45, hy - HR * 1.18), (hx + HR * 1.25, hy - HR * 1.05), (hx + HR * 0.95, hy - HR * 0.75), (hx + HR * 1.05, hy - HR * 0.3),
                (hx + HR * 0.82, hy - HR * 0.42), (hx + HR * 0.45, hy - HR * 0.55), (hx + HR * 0.55, hy - HR * 0.78), (hx + HR * 0.1, hy - HR * 0.55),
                (hx - HR * 0.35, hy - HR * 0.62), (hx - HR * 0.25, hy - HR * 0.82), (hx - HR * 0.72, hy - HR * 0.45), (hx - HR * 0.82, hy - HR * 0.05)]
-        _poly(d, pts, (22, 22, 26), w)
+        _poly(d, pts, c.hc, w)
     elif c.hair == "ponytail":
         pts = [(hx - HR * 0.98, hy + HR * 0.15), (hx - HR * 1.0, hy - HR * 0.55), (hx - HR * 0.5, hy - HR * 1.05), (hx + HR * 0.3, hy - HR * 1.08),
                (hx + HR * 0.9, hy - HR * 0.75), (hx + HR * 1.0, hy - HR * 0.2), (hx + HR * 0.75, hy - HR * 0.45), (hx + HR * 0.2, hy - HR * 0.6),
                (hx - HR * 0.4, hy - HR * 0.45), (hx - HR * 0.78, hy - HR * 0.1)]
-        _poly(d, pts, (22, 22, 26), w)
+        _poly(d, pts, c.hc, w)
         _ell(d, [hx - HR * 1.1, hy - HR * 0.95, hx - HR * 0.6, hy - HR * 0.6], c.ribbon, w)
         _ell(d, [hx - HR * 0.8, hy - HR * 1.12, hx - HR * 0.35, hy - HR * 0.78], c.ribbon, w)
     elif c.hair == "bun":
-        _ell(d, [hx - HR * 0.45, hy - HR * 1.45, hx + HR * 0.45, hy - HR * 0.75], (22, 22, 26), w)
+        _ell(d, [hx - HR * 0.45, hy - HR * 1.45, hx + HR * 0.45, hy - HR * 0.75], c.hc, w)
         pts = [(hx - HR * 0.98, hy + HR * 0.2), (hx - HR * 0.95, hy - HR * 0.6), (hx - HR * 0.3, hy - HR * 1.05), (hx + HR * 0.3, hy - HR * 1.05), (hx + HR * 0.95, hy - HR * 0.6),
                (hx + HR * 0.98, hy + HR * 0.2), (hx + HR * 0.75, hy - HR * 0.35), (hx, hy - HR * 0.62), (hx - HR * 0.75, hy - HR * 0.35)]
-        _poly(d, pts, (22, 22, 26), w)
+        _poly(d, pts, c.hc, w)
         d.ellipse([hx - 9 * s, hy - HR * 0.42, hx + 9 * s, hy - HR * 0.24], fill=(210, 40, 60))
     elif c.hair == "neat":
         pts = [(hx - HR * 0.98, hy), (hx - HR * 0.95, hy - HR * 0.7), (hx - HR * 0.4, hy - HR * 1.1), (hx + HR * 0.5, hy - HR * 1.08), (hx + HR * 0.98, hy - HR * 0.6),
                (hx + HR * 0.96, hy - HR * 0.1), (hx + HR * 0.6, hy - HR * 0.5), (hx - HR * 0.3, hy - HR * 0.55), (hx - HR * 0.8, hy - HR * 0.2)]
-        _poly(d, pts, (22, 22, 26), w)
+        _poly(d, pts, c.hc, w)
     # eyes
     lx, ly = look
     ey = hy - HR * 0.02; ex = HR * 0.38

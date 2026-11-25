@@ -33,3 +33,10 @@ The API key lacks the voices_read permission, so voices are picked by known prem
 - Village boy Raju: Adam pNInz6obpgDQGcFmaJgB pitched x1.2; owl/sfx Adam pitched x0.85
 - Bizarre Brain narrator: Adam pNInz6obpgDQGcFmaJgB (stability 0.5, style 0.25)
 - U Toon kids settings: stability 0.35, style 0.45
+
+## Animation rules (user asked: characters must walk, blink, move — never slide)
+- `toon.draw(..., walk=phase)` gives a stepping walk with arm swing and body bob; pass a phase that grows with distance moved (see PREV/PHASE logic in example_episode_bargad_bhoot.py: phase += |dx| / (190 * scale)).
+- Idle breathing, head nod while talking and an automatic hand gesture while talking are built into `draw` (needs `t`).
+- Blink with the `blink()` helper in the episode example (natural timing, occasional double blink).
+- Characters turn their eyes toward whoever is speaking.
+- Any character that changes position on screen must walk in, not slide.

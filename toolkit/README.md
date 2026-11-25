@@ -20,3 +20,16 @@ The workspace cannot reach ElevenLabs. Write `jobs/<name>.json` (see `jobs/test-
 - U Toon: Hindi, Made for Kids, no product promotion, intro at start, like/subscribe mid-roll + end card. Comedy with the recurring cast first; also kid-safe spooky (funny/harmless reveal), mystery, village, festival stories. Target 6–8 min.
 - JuniorShopper: entertaining mini-stories/experiments, no prices in videos, end with juniorshopper.com + free delivery.
 - Post JuniorShopper Reels to Instagram via Windsor.ai (account 17841473474758835) using a public raw.githubusercontent.com URL of the mp4 pushed to this repo. YouTube: user uploads manually until advanced features are approved (Junior Shopper account 119188, U Toon account 119206 in Windsor).
+
+## ElevenLabs voices in use (paid Starter plan, model eleven_multilingual_v2)
+The API key lacks the voices_read permission, so voices are picked by known premade IDs:
+- U Toon narrator: Rachel 21m00Tcm4TlvDq8ikWAM
+- Golu: Josh TxGEqnHWrfWFTfGW9XjX, pitched up x1.15 with ffmpeg
+- Pinky: Elli MF3mGyEYCl7XYWbV9V6O
+- Bunty: Antoni ErXwobaYiN019PkySvjV, pitched up x1.15
+- Chintu: Gigi jBpfuIE2acCO8z3wKNLl
+- Kids chorus: Mimi zrHiDhphv9ZnVXBqCLjz
+- Nani / teacher: Matilda XrExE9yKIg1WjnnlVkGX
+- Village boy Raju: Adam pNInz6obpgDQGcFmaJgB pitched x1.2; owl/sfx Adam pitched x0.85
+- Bizarre Brain narrator: Adam pNInz6obpgDQGcFmaJgB (stability 0.5, style 0.25)
+- U Toon kids settings: stability 0.35, style 0.45

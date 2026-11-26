@@ -18,7 +18,7 @@ The workspace cannot reach ElevenLabs. Write `jobs/<name>.json` (see `jobs/test-
 
 ## Rules
 - U Toon: Hindi, Made for Kids, no product promotion, intro at start, like/subscribe mid-roll + end card. Comedy with the recurring cast first; also kid-safe spooky (funny/harmless reveal), mystery, village, festival stories. Target 6–8 min.
-- JuniorShopper: entertaining mini-stories/experiments, no prices in videos, end with juniorshopper.com + free delivery.
+- JuniorShopper: entertaining mini-stories/experiments in the SAME toon.py cartoon style as U Toon (vertical), no prices in videos, end with juniorshopper.com + free delivery. See toolkit/preferences.md (it overrides everything).
 - Post JuniorShopper Reels to Instagram via Windsor.ai (account 17841473474758835) using a public raw.githubusercontent.com URL of the mp4 pushed to this repo. YouTube: user uploads manually until advanced features are approved (Junior Shopper account 119188, U Toon account 119206 in Windsor).
 
 ## ElevenLabs voices in use (paid Starter plan, model eleven_multilingual_v2)
@@ -31,7 +31,7 @@ The API key lacks the voices_read permission, so voices are picked by known prem
 - Kids chorus: Mimi zrHiDhphv9ZnVXBqCLjz
 - Nani / teacher: Matilda XrExE9yKIg1WjnnlVkGX
 - Village boy Raju: Adam pNInz6obpgDQGcFmaJgB pitched x1.2; owl/sfx Adam pitched x0.85
-- Bizarre Brain narrator: Adam pNInz6obpgDQGcFmaJgB (stability 0.5, style 0.25)
+- Bizarre Brain narrator: see toolkit/preferences.md (user-chosen voices P1bg08DkjqiVEzOn76yG / JlfM9BOUS7FcsHfTqsAy)
 - U Toon kids settings: stability 0.35, style 0.45
 
 ## Animation rules (user asked: characters must walk, blink, move — never slide)

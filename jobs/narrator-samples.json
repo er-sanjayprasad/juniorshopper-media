@@ -1,0 +1,7 @@
+{"model": "eleven_multilingual_v2",
+ "lines": [
+  {"id": "1-brian", "voice_id": "nPczCjzI2devNBz1zQrb", "text": "अंतरिक्ष की सबसे रहस्यमयी चीज़। एक ऐसी जगह, जहाँ से रोशनी भी बाहर नहीं निकल सकती।", "stability": 0.5, "style": 0.3},
+  {"id": "2-george", "voice_id": "JBFqnCBsd6RMkjVDRZzb", "text": "अंतरिक्ष की सबसे रहस्यमयी चीज़। एक ऐसी जगह, जहाँ से रोशनी भी बाहर नहीं निकल सकती।", "stability": 0.5, "style": 0.3},
+  {"id": "3-bill", "voice_id": "pqHfZKP75CyOMtwXQerl", "text": "अंतरिक्ष की सबसे रहस्यमयी चीज़। एक ऐसी जगह, जहाँ से रोशनी भी बाहर नहीं निकल सकती।", "stability": 0.5, "style": 0.3},
+  {"id": "4-daniel", "voice_id": "onwK4e9ZLuTAKqWW03F9", "text": "अंतरिक्ष की सबसे रहस्यमयी चीज़। एक ऐसी जगह, जहाँ से रोशनी भी बाहर नहीं निकल सकती।", "stability": 0.5, "style": 0.3}
+ ]}

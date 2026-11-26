@@ -1,0 +1,5 @@
+{"model": "eleven_multilingual_v2",
+ "lines": [
+  {"id": "P1bg", "voice_id": "P1bg08DkjqiVEzOn76yG", "text": "अगर आप ब्लैक होल में गिर जाएँ, तो क्या होगा? आज हम एक काल्पनिक सफ़र पर चलेंगे।", "stability": 0.5, "style": 0.3},
+  {"id": "JlfM", "voice_id": "JlfM9BOUS7FcsHfTqsAy", "text": "अगर आप ब्लैक होल में गिर जाएँ, तो क्या होगा? आज हम एक काल्पनिक सफ़र पर चलेंगे।", "stability": 0.5, "style": 0.3}
+ ]}

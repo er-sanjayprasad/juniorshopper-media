@@ -1,0 +1,68 @@
+{
+ "model": "eleven_multilingual_v2",
+ "lines": [
+  {
+   "id": "00",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "अरे! मेरी पतंग छत के खंभे पर अटक गई!",
+   "stability": 0.4,
+   "style": 0.4
+  },
+  {
+   "id": "01",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "अब तो वो कभी नहीं उतरेगी। खंभा बहुत ऊँचा है!",
+   "stability": 0.4,
+   "style": 0.4
+  },
+  {
+   "id": "02",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "रुको! मेरे पास है... रोप क्लाइंबिंग रोबोट!",
+   "stability": 0.4,
+   "style": 0.4
+  },
+  {
+   "id": "03",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "चिंटू ने रोबोट को रस्सी पर लगाया, और बटन दबाया...",
+   "stability": 0.4,
+   "style": 0.4
+  },
+  {
+   "id": "04",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "रोबोट चढ़ता गया... चढ़ता गया...",
+   "stability": 0.4,
+   "style": 0.4
+  },
+  {
+   "id": "05",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "वाह! ये तो सच में ऊपर चढ़ रहा है!",
+   "stability": 0.4,
+   "style": 0.4
+  },
+  {
+   "id": "06",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "और ये रही मेरी पतंग!",
+   "stability": 0.4,
+   "style": 0.4
+  },
+  {
+   "id": "07",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "ये रोबोट मैंने ख़ुद बनाया है, गियर और मोटर से!",
+   "stability": 0.4,
+   "style": 0.4
+  },
+  {
+   "id": "08",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "रोप क्लाइंबिंग रोबोट किट, जूनियर शॉपर डॉट कॉम पर। फ्री डिलीवरी, पूरे भारत में!",
+   "stability": 0.4,
+   "style": 0.4
+  }
+ ]
+}

@@ -1,0 +1,236 @@
+{
+ "model": "eleven_multilingual_v2",
+ "lines": [
+  {
+   "id": "00",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "गोलू का नकली बुखार!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "01",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "आज गोलू की क्लास में गणित का टेस्ट था। और गोलू को गणित से... बहुत डर लगता था।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "02",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "बच्चो, किताबें बंद करो। टेस्ट शुरू होने वाला है!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "03",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "टेस्ट? मैंने तो कुछ पढ़ा ही नहीं! अब क्या करूँ?",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "04",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "आइडिया! मैं बीमार होने का नाटक करता हूँ!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "05",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "आह्ह... ओह्ह... मैडम, मेरा सिर घूम रहा है... मुझे बहुत तेज़ बुखार है!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "06",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "गोलू को बुखार?",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "07",
+   "voice_id": "MF3mGyEYCl7XYWbV9V6O",
+   "text": "पर गोलू, अभी लंच में तो तुमने तीन समोसे खाए थे!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "08",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "हा हा हा!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "09",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "वो... वो समोसे ही तो गरम थे! इसलिए बुखार हो गया!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "10",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "अच्छा? चलो, थर्मामीटर से देखते हैं।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "11",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "मैडम ने थर्मामीटर लगाया...",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "12",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "अरे गोलू! तुम्हारा बुखार तो बिल्कुल नॉर्मल है!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "13",
+   "voice_id": "ErXwobaYiN019PkySvjV",
+   "text": "मैडम, लगता है गोलू का बुखार, टेस्ट से डरकर भाग गया!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "14",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "हा हा हा!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "15",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "रुकिए मैडम! अब... अब मेरे पेट में दर्द हो रहा है!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "16",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "ठीक है गोलू। फिर तुम्हें ये कड़वी दवाई पीनी पड़ेगी। करेले का जूस!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "17",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "करेले का जूस? छी!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "18",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "करेले का नाम सुनते ही, गोलू का पेट दर्द, सिर दर्द, बुखार, सब एक सेकंड में ठीक हो गया!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "19",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "मैडम! मैं बिल्कुल ठीक हूँ! देखिए, मैं तो कूद भी सकता हूँ!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "20",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "हा हा हा!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "21",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "बहुत अच्छा। तो फिर बैठो, और टेस्ट दो।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "22",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "टेस्ट शुरू हुआ। गोलू ने डरते डरते पेपर देखा...",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "23",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "पहला सवाल। अगर गोलू के पास चार समोसे हैं, और वो दो खा ले, तो कितने बचे?",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "24",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "अरे! ये तो आसान है! दो! और अगर पिंकी भी एक माँग ले... तो मैं नहीं दूँगा!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "25",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "गोलू भैया, समोसे वाले सवाल तो तुम्हें बहुत अच्छे से आते हैं!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "26",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "अगले दिन, टेस्ट का रिज़ल्ट आया।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "27",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "गोलू, तुम्हें दस में से आठ नंबर मिले हैं!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "28",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "आठ? मुझे? सच में?",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "29",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "देखा गोलू? डरकर बहाने बनाने से अच्छा है, कोशिश करना। जब तुमने कोशिश की, तो तुमने कर दिखाया।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "30",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "थैंक यू मैडम! अगले टेस्ट के लिए मैं पढ़ाई करूँगा... पर समोसे खाकर!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "31",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "हा हा हा!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "32",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "गोलू का ये कारनामा पसंद आया? तो वीडियो को लाइक करें, शेयर करें, और यू टून को सब्सक्राइब करें! अगले हफ़्ते फिर मिलेंगे। बाय बाय!",
+   "stability": 0.35,
+   "style": 0.45
+  }
+ ]
+}

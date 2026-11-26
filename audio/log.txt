@@ -1,2 +1,4 @@
-WARN voices list failed: HTTP 401: b'{"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission voices_read to execute this operation.","status":"missing_permissions","request_id":"19f4d83bac56f023d0de10786279856e"}}'
-ERROR narrator-samples 3-bill HTTP 404: b'{"detail":{"type":"not_found","code":"voice_not_found","message":"A voice with voice_id \'pqHfZKP75CyOMtwXQerl\' was not found.","status":"voice_not_found","request_id":"45e19bb5f6ef2d469736d93cd3635e99"}}'
+WARN voices list failed: HTTP 401: b'{"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission voices_read to execute this operation.","status":"missing_permissions","request_id":"d2c7d6cd30aebe8ea100c8bba28689db"}}'
+made audio/narrator-samples-2/P1bg.mp3
+made audio/narrator-samples-2/JlfM.mp3
+ERROR narrator-samples 3-bill HTTP 404: b'{"detail":{"type":"not_found","code":"voice_not_found","message":"A voice with voice_id \'pqHfZKP75CyOMtwXQerl\' was not found.","status":"voice_not_found","request_id":"c33ad30885c8db129703170447471afc"}}'

@@ -1,0 +1,21 @@
+name: Make 3D clips
+on:
+  push:
+    paths: ["fal_jobs/**"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 tools/fal_video.py
+        env:
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+      - run: |
+          git config user.name "JuniorShopper Bot"
+          git config user.email "bot@juniorshopper.com"
+          git add fal_out
+          git diff --cached --quiet || (git commit -m "Add generated 3D clips" && git pull --rebase && git push)

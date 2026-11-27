@@ -12,3 +12,5 @@
 - Salt water lamp (English, Nov 24; Hindi "will it work", Nov 25)
 - Rain alarm saves Mummy's clothes (Nov 25)
 - Rope climbing robot rescues kite (Nov 26)
+- (Bizarre Brain) What if the Moon disappeared – चाँद गायब (Nov 27)
+- (Junior Shopper) Golu's snoring sets off the earthquake alarm (Nov 27)

@@ -1,1 +1,31 @@
-WARN voices list failed: HTTP 401: b'{"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission voices_read to execute this operation.","status":"missing_permissions","request_id":"3d1bef0d35a97f96459a4bb0ab90fcdf"}}'
+WARN voices list failed: HTTP 401: b'{"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission voices_read to execute this operation.","status":"missing_permissions","request_id":"197029125118d50820224c2e6d0528ea"}}'
+made audio/bb-moon-gayab/00.mp3
+made audio/bb-moon-gayab/01.mp3
+made audio/bb-moon-gayab/02.mp3
+made audio/bb-moon-gayab/03.mp3
+made audio/bb-moon-gayab/04.mp3
+made audio/bb-moon-gayab/05.mp3
+made audio/bb-moon-gayab/06.mp3
+made audio/bb-moon-gayab/07.mp3
+made audio/bb-moon-gayab/08.mp3
+made audio/bb-moon-gayab/09.mp3
+made audio/bb-moon-gayab/10.mp3
+made audio/bb-moon-gayab/11.mp3
+made audio/bb-moon-gayab/12.mp3
+made audio/bb-moon-gayab/13.mp3
+made audio/bb-moon-gayab/14.mp3
+made audio/bb-moon-gayab/15.mp3
+made audio/bb-moon-gayab/16.mp3
+made audio/bb-moon-gayab/17.mp3
+made audio/bb-moon-gayab/18.mp3
+made audio/js-earthquake-alarm/00.mp3
+made audio/js-earthquake-alarm/01.mp3
+made audio/js-earthquake-alarm/02.mp3
+made audio/js-earthquake-alarm/03.mp3
+made audio/js-earthquake-alarm/04.mp3
+made audio/js-earthquake-alarm/05.mp3
+made audio/js-earthquake-alarm/06.mp3
+made audio/js-earthquake-alarm/07.mp3
+made audio/js-earthquake-alarm/08.mp3
+made audio/js-earthquake-alarm/09.mp3
+made audio/js-earthquake-alarm/10.mp3

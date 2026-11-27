@@ -1,0 +1,82 @@
+{
+ "model": "eleven_multilingual_v2",
+ "lines": [
+  {
+   "id": "00",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "गोलू, देखो! मैंने अर्थक्वेक अलार्म बनाया है। ज़मीन ज़रा भी हिली, तो ये बजेगा!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "01",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "वाह चिंटू! पर अभी तो सो जाओ यार... बहुत नींद आ रही है।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "02",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "खर्र्र... फुर्र्र... खर्र्र... फुर्र्र...",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "03",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "भूकंप! भूकंप! गोलू उठो, बाहर भागो!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "04",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "क्या? कहाँ? मम्मी!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "05",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "रुको... अलार्म तो बंद हो गया। सब शांत है।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "06",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "खर्र्र... फुर्र्र... खर्र्र...",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "07",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "अरे! ये भूकंप नहीं... तुम्हारे खर्राटे हैं, गोलू!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "08",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "मेरे खर्राटे इतने ज़ोरदार हैं?!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "09",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "अर्थक्वेक अलार्म STEM किट। हल्की सी कंपन भी पकड़ ले! खुद बनाओ, साइंस सीखो।",
+   "stability": 0.45,
+   "style": 0.3
+  },
+  {
+   "id": "10",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "आज ही ऑर्डर करें, juniorshopper.com पर। पूरे भारत में फ्री डिलीवरी!",
+   "stability": 0.45,
+   "style": 0.3
+  }
+ ]
+}

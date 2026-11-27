@@ -1,0 +1,25 @@
+name: Upload to YouTube
+on:
+  push:
+    paths: ["uploads/*.json"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: youtube-upload
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 tools/yt_upload.py
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_TOKEN_JUNIORSHOPPER: ${{ secrets.YT_TOKEN_JUNIORSHOPPER }}
+          YT_TOKEN_UTOON: ${{ secrets.YT_TOKEN_UTOON }}
+          YT_TOKEN_BIZARREBRAIN: ${{ secrets.YT_TOKEN_BIZARREBRAIN }}
+      - run: |
+          git config user.name "JuniorShopper Bot"
+          git config user.email "bot@juniorshopper.com"
+          git add uploads
+          git diff --cached --quiet || (git commit -m "YouTube upload results" && git pull --rebase && git push)

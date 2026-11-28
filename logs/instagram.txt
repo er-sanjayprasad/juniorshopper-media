@@ -34,3 +34,8 @@ Traceback (most recent call last):
   File "/home/runner/work/juniorshopper-media/juniorshopper-media/tools/ig_post.py", line 35, in call
     raise RuntimeError(f"{path}: HTTP {e.code} {e.read().decode()[:400]}")
 RuntimeError: me: HTTP 400 {"error":{"message":"Error validating access token: Session has expired on Saturday, 17-Oct-26 15:00:00 PDT. The current time is Friday, 27-Nov-26 21:52:51 PST.","type":"OAuthException","code":190,"error_subcode":463,"fbtrace_id":"AYNmFj207dvZxRkNL3EyCIq"}}
+== 2026-11-28 11:27 instagram_check.txt
+/home/runner/work/juniorshopper-media/juniorshopper-media/tools/ig_post.py:62: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  "| expires:", "NEVER" if not exp else datetime.datetime.utcfromtimestamp(exp).isoformat() + "Z")
+Instagram account: {'id': '17841473474758835', 'followers_count': 15, 'media_count': 84, 'username': 'juniorshoppers'}
+Token type: PAGE | valid: True | expires: 2026-11-28T07:00:00Z

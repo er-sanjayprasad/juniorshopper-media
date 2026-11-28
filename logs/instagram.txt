@@ -76,3 +76,6 @@ RuntimeError: me: HTTP 400 {"error":{"message":"(#100) Tried accessing nonexisti
 == 2026-11-28 11:33 instagram_check.txt
 Instagram account: {'id': '17841473474758835', 'followers_count': 15, 'media_count': 84, 'username': 'juniorshoppers'}
 Token type: USER | valid: True | expires: 2027-01-27T06:00:01+00:00
+== 2026-11-28 11:41 instagram_check.txt
+Instagram account: {'id': '17841473474758835', 'followers_count': 15, 'media_count': 84, 'username': 'juniorshoppers'}
+Token type: PAGE | valid: True | expires: NEVER

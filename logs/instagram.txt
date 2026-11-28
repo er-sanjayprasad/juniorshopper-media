@@ -73,3 +73,6 @@ Traceback (most recent call last):
   File "/home/runner/work/juniorshopper-media/juniorshopper-media/tools/ig_post.py", line 35, in call
     raise RuntimeError(f"{path}: HTTP {e.code} {e.read().decode()[:400]}")
 RuntimeError: me: HTTP 400 {"error":{"message":"(#100) Tried accessing nonexisting field (instagram_business_account)","type":"OAuthException","code":100,"fbtrace_id":"ArhXOEorRXfaxw_7Suo-Ske"}}
+== 2026-11-28 11:33 instagram_check.txt
+Instagram account: {'id': '17841473474758835', 'followers_count': 15, 'media_count': 84, 'username': 'juniorshoppers'}
+Token type: USER | valid: True | expires: 2027-01-27T06:00:01+00:00

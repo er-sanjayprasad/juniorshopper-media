@@ -39,9 +39,13 @@ def ig_user_id():
     uid = os.environ.get("IG_USER_ID", "").strip()
     if uid:
         return uid
-    me = call("me", {"fields": "id,name,instagram_business_account"})
-    if me.get("instagram_business_account"):          # Page token
-        return me["instagram_business_account"]["id"]
+    try:
+        me = call("me", {"fields": "id,name,instagram_business_account"})
+        if me.get("instagram_business_account"):      # Page token
+            return me["instagram_business_account"]["id"]
+    except RuntimeError as e:
+        if "nonexisting field" not in str(e):         # a User token has no such field; anything else is real
+            raise
     pages = call("me/accounts", {"fields": "name,instagram_business_account"})  # User token
     for p in pages.get("data", []):
         if p.get("instagram_business_account"):
@@ -59,7 +63,7 @@ def check():
         d = json.load(urllib.request.urlopen(f"{API}/debug_token?{q}", timeout=60))["data"]
         exp = d.get("expires_at", 0)
         print("Token type:", d.get("type"), "| valid:", d.get("is_valid"),
-              "| expires:", "NEVER" if not exp else datetime.datetime.utcfromtimestamp(exp).isoformat() + "Z")
+              "| expires:", "NEVER" if not exp else datetime.datetime.fromtimestamp(exp, datetime.timezone.utc).isoformat())
 
 
 def post():

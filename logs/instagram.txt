@@ -1,2 +1,36 @@
 == 2026-11-28 09:01 instagram_check.txt
 IG_ACCESS_TOKEN secret is not set; skipping.
+== 2026-11-28 11:22 instagram_check.txt
+Traceback (most recent call last):
+  File "/home/runner/work/juniorshopper-media/juniorshopper-media/tools/ig_post.py", line 32, in call
+    r = urllib.request.urlopen(url + "?" + data, timeout=120)
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/juniorshopper-media/juniorshopper-media/tools/ig_post.py", line 96, in <module>
+    check() if "--check" in sys.argv else post()
+    ~~~~~^^
+  File "/home/runner/work/juniorshopper-media/juniorshopper-media/tools/ig_post.py", line 53, in check
+    uid = ig_user_id()
+  File "/home/runner/work/juniorshopper-media/juniorshopper-media/tools/ig_post.py", line 42, in ig_user_id
+    me = call("me", {"fields": "id,name,instagram_business_account"})
+  File "/home/runner/work/juniorshopper-media/juniorshopper-media/tools/ig_post.py", line 35, in call
+    raise RuntimeError(f"{path}: HTTP {e.code} {e.read().decode()[:400]}")
+RuntimeError: me: HTTP 400 {"error":{"message":"Error validating access token: Session has expired on Saturday, 17-Oct-26 15:00:00 PDT. The current time is Friday, 27-Nov-26 21:52:51 PST.","type":"OAuthException","code":190,"error_subcode":463,"fbtrace_id":"AYNmFj207dvZxRkNL3EyCIq"}}

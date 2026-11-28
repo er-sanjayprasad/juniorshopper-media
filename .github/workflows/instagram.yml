@@ -1,0 +1,39 @@
+name: Post Reel to Instagram
+on:
+  schedule:
+    - cron: "31 13 * * *"     # 7:01 pm India time, every day
+  push:
+    paths: ["tools/ig_check.txt"]   # editing this file runs a token check (no posting)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: instagram-post
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Check token
+        if: github.event_name == 'push'
+        run: python3 tools/ig_post.py --check 2>&1 | tee instagram_check.txt
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_APP_ID: ${{ secrets.IG_APP_ID }}
+          IG_APP_SECRET: ${{ secrets.IG_APP_SECRET }}
+      - name: Post today's Reel
+        if: github.event_name != 'push'
+        run: python3 tools/ig_post.py 2>&1 | tee instagram_run.txt
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      - name: Save result
+        if: always()
+        run: |
+          mkdir -p logs
+          ts=$(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M')
+          for f in instagram_check.txt instagram_run.txt; do [ -f $f ] && { echo "== $ts $f"; cat $f; } >> logs/instagram.txt; done
+          git config user.name "JuniorShopper Bot"
+          git config user.email "bot@juniorshopper.com"
+          git add logs daily
+          git diff --cached --quiet || (git commit -m "Instagram post result" && git pull --rebase && git push)

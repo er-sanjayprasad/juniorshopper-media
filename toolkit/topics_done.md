@@ -14,3 +14,5 @@
 - Rope climbing robot rescues kite (Nov 26)
 - (Bizarre Brain) What if the Moon disappeared – चाँद गायब (Nov 27)
 - (Junior Shopper) Golu's snoring sets off the earthquake alarm (Nov 27)
+- (U Toon) Golu jasoos aur gayab medal – mystery, crow took the medal (Nov 28)
+- (Junior Shopper) Follow-mode car exposes Golu's laddoo theft (Nov 28)

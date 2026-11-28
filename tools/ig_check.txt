@@ -1,1 +1,1 @@
-Edit this line to re-run the Instagram token check: 3
+Edit this line to re-run the Instagram token check: 4

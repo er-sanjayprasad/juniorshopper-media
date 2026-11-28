@@ -1,0 +1,537 @@
+{
+ "model": "eleven_multilingual_v2",
+ "lines": [
+  {
+   "id": "00",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "गोलू जासूस और गायब मेडल!",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "01",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "सोमवार की सुबह, क्लास में सब बच्चे बहुत खुश थे। आज शर्मा मैडम कुछ खास लेकर आई थीं।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "02",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "बच्चो, कल मुझे शहर में बेस्ट टीचर का गोल्ड मेडल मिला है! ये देखो!",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "03",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "वाह! कितना चमकीला है!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "04",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "मैडम, ये असली सोने का है? इसे खा सकते हैं क्या?",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "05",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "गोलू! मेडल खाने के लिए नहीं, संभालकर रखने के लिए होता है।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "06",
+   "voice_id": "MF3mGyEYCl7XYWbV9V6O",
+   "text": "मैडम, आप बहुत अच्छा पढ़ाती हैं। ये मेडल आपको ही मिलना चाहिए था।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "07",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "धन्यवाद पिंकी! मैं इसे यहाँ मेज़ पर रखती हूँ, और प्रिंसिपल सर से मिलकर अभी आती हूँ। कोई शरारत नहीं!",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "08",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "मैडम चली गईं। खिड़की खुली थी, और ठंडी-ठंडी हवा आ रही थी।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "09",
+   "voice_id": "ErXwobaYiN019PkySvjV",
+   "text": "चलो, जब तक मैडम नहीं आतीं, क्रिकेट हो जाए! गोलू, बॉलिंग कर!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "10",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "बंटी, क्लास में क्रिकेट? कुछ टूट गया तो?",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "11",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "अरे चिंटू, कुछ नहीं टूटेगा। ये लो, मेरी स्पेशल गुगली!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "12",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "सब बच्चे खेल में खो गए। किसी ने ध्यान ही नहीं दिया, कि खिड़की पर कौन आया।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "13",
+   "voice_id": "pNInz6obpgDQGcFmaJgB",
+   "text": "काँव! काँव!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "14",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "दस मिनट बाद, मैडम वापस आईं।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "15",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "अरे! मेरा मेडल कहाँ गया? अभी तो यहीं रखा था!",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "16",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "क्या? मेडल गायब?",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "17",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "बच्चो, सच-सच बताओ। किसी ने मेरा मेडल उठाया है?",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "18",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "नहीं मैडम, हमने नहीं उठाया!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "19",
+   "voice_id": "MF3mGyEYCl7XYWbV9V6O",
+   "text": "मैडम बहुत उदास हो गईं। हमें कुछ करना होगा।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "20",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "घबराओ मत! अब ये केस संभालेगा... गोलू जासूस!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "21",
+   "voice_id": "ErXwobaYiN019PkySvjV",
+   "text": "हा हा! गोलू जासूस? तुम तो अपना टिफ़िन भी नहीं ढूँढ पाते!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "22",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "हँसो मत बंटी। एक असली जासूस, हर सुराग पर नज़र रखता है। चिंटू, मेरा मैग्नीफ़ाइंग ग्लास!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "23",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "ये लो। पर पहले मैडम की मेज़ को ध्यान से देखते हैं।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "24",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "गोलू ने मेज़ को ध्यान से देखा। वहाँ एक काला पंख पड़ा था।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "25",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "सुराग नंबर एक! एक काला पंख!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "26",
+   "voice_id": "MF3mGyEYCl7XYWbV9V6O",
+   "text": "पंख? क्लास में पंख कहाँ से आया?",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "27",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "हम्म... शायद चोर ने काली टोपी पहनी थी, जिसमें पंख लगा था!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "28",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "गोलू, खिड़की भी खुली है। और खिड़की पर कुछ छोटे-छोटे निशान हैं।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "29",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "सुराग नंबर दो! चोर खिड़की से आया... और खिड़की से ही भागा!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "30",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "तभी गोलू की नज़र बंटी की जेब पर पड़ी। वहाँ से कुछ सुनहरा चमक रहा था।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "31",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "रुको! बंटी, तुम्हारी जेब में ये सुनहरी चीज़ क्या है?",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "32",
+   "voice_id": "ErXwobaYiN019PkySvjV",
+   "text": "क... कुछ नहीं! मेरी जेब, मेरी मर्ज़ी!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "33",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "पकड़ा गया! मैडम, मेडल चोर बंटी है!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "34",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "बंटी?",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "35",
+   "voice_id": "ErXwobaYiN019PkySvjV",
+   "text": "अरे नहीं! ये देखो, ये तो चॉकलेट का सिक्का है! सुनहरे कागज़ वाला। मम्मी ने दिया था।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "36",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "ओह... चॉकलेट का सिक्का। सबूत की जाँच करनी पड़ेगी!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "37",
+   "voice_id": "ErXwobaYiN019PkySvjV",
+   "text": "अरे! मेरा सबूत खा गया! गोलू!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "38",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "हा हा हा!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "39",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "देखा गोलू? बिना पक्के सबूत के, किसी पर इल्ज़ाम नहीं लगाते।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "40",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "सॉरी बंटी। सॉरी मैडम। मैं जासूसी में थोड़ा जल्दी कर गया।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "41",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "अब चिंटू सोच में पड़ गया। उसे कुछ याद आ रहा था।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "42",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "पिंकी, कल तुम्हारी चमकीली हेयर-क्लिप भी तो गायब हुई थी ना?",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "43",
+   "voice_id": "MF3mGyEYCl7XYWbV9V6O",
+   "text": "हाँ! मैंने उसे खिड़की के पास रखा था!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "44",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "और परसों, मेरी स्टील की चम्मच भी खिड़की के पास से गायब हुई थी।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "45",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "हेयर-क्लिप, चम्मच, और मेडल... तीनों चमकीली चीज़ें! और तीनों खिड़की के पास!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "46",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "और काला पंख! मुझे लगता है, चोर कोई इंसान नहीं... एक कौआ है!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "47",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "कौआ?",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "48",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "हाँ! मैंने किताब में पढ़ा है। कौए बहुत होशियार होते हैं, और कभी-कभी चमकती चीज़ें उठाकर ले जाते हैं।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "49",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "तो चलो, चोर को रंगे हाथों पकड़ते हैं! मेरे पास एक प्लान है!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "50",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "गोलू ने चॉकलेट के चमकीले कागज़ को गोल करके, एक चमकती गेंद बनाई, और खिड़की पर रख दी।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "51",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "सब छुप जाओ! एकदम चुप! कोई आवाज़ नहीं!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "52",
+   "voice_id": "ErXwobaYiN019PkySvjV",
+   "text": "गोलू, मुझे छींक आ रही है...",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "53",
+   "voice_id": "MF3mGyEYCl7XYWbV9V6O",
+   "text": "श्श्श! बंटी, नाक पकड़ो!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "54",
+   "voice_id": "pNInz6obpgDQGcFmaJgB",
+   "text": "काँव! काँव!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "55",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "और तभी, एक काला कौआ खिड़की पर आया। उसने इधर-उधर देखा, और चमकती गेंद चोंच में दबा ली!",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "56",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "चोर पकड़ा गया!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "57",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "देखो! वो स्कूल के मैदान वाले नीम के पेड़ की तरफ़ उड़ रहा है!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "58",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "चलो बच्चो, पर लाइन में, आराम से। कोई दौड़ेगा नहीं!",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "59",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "सब नीम के पेड़ के नीचे पहुँचे। ऊपर एक डाल पर, कौए का घोंसला था।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "60",
+   "voice_id": "MF3mGyEYCl7XYWbV9V6O",
+   "text": "वो देखो! घोंसले में कुछ चमक रहा है!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "61",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "मेडल! हेयर-क्लिप! चम्मच! और... अरे, ये तो मेरी खोई हुई सीटी है!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "62",
+   "voice_id": "ErXwobaYiN019PkySvjV",
+   "text": "मैं पेड़ पर चढ़कर ले आता हूँ!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "63",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "नहीं बंटी! पेड़ पर चढ़ना खतरनाक है। माली काका की लंबी लग्गी लाओ।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "64",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "मैडम ने लंबी लग्गी से, बहुत धीरे से, घोंसले से सारी चीज़ें नीचे गिराईं। और घोंसले को ज़रा भी नुकसान नहीं पहुँचाया।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "65",
+   "voice_id": "pNInz6obpgDQGcFmaJgB",
+   "text": "काँव! काँव! काँव!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "66",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "सॉरी कौए भाई! चीज़ें हमारी थीं। पर ये लो, मेरे टिफ़िन की आधी रोटी। तुम्हारी फ़ीस!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "67",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "देखा? कौआ रोटी लेकर खुश हो गया!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "68",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "शाबाश बच्चो! चिंटू ने ध्यान से सोचा, और गोलू ने शानदार प्लान बनाया।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "69",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "पर याद रखना, जासूसी का पहला नियम: सबूत देखो, सोचो, फिर बोलो। किसी को बिना सबूत चोर मत कहो।",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "70",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "जी मैडम!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "71",
+   "voice_id": "ErXwobaYiN019PkySvjV",
+   "text": "और दूसरा नियम: अपनी चॉकलेट, गोलू से छुपाकर रखो!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "72",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "मैडम, केस सुलझाने के लिए जासूस की फ़ीस... एक समोसा?",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "73",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "हा हा! ठीक है गोलू जासूस, आज समोसा मेरी तरफ़ से!",
+   "stability": 0.5,
+   "style": 0.3
+  },
+  {
+   "id": "74",
+   "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+   "text": "हा हा हा!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "75",
+   "voice_id": "21m00Tcm4TlvDq8ikWAM",
+   "text": "तो दोस्तो, आपको गोलू जासूस का ये केस कैसा लगा? कमेंट में बताइए, और यू टून को सब्सक्राइब करना मत भूलना!",
+   "stability": 0.5,
+   "style": 0.3
+  }
+ ]
+}

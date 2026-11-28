@@ -1,0 +1,68 @@
+{
+ "model": "eleven_multilingual_v2",
+ "lines": [
+  {
+   "id": "00",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "गोलू, देखो! मेरी नई फॉलो-मोड कार! ये तुम्हारे पीछे-पीछे चलेगी।",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "01",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "सच में? चल मेरी कार, चल! अरे वाह, ये तो सच में आ रही है!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "02",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "हा हा! ये तो मेरा पालतू पपी बन गई!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "03",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "अब चुपके से किचन में... मम्मी के लड्डू! श्श्श!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "04",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "गोलू! ये बीप-बीप कौन कर रहा है? अच्छा जी! लड्डू चोर पकड़ा गया!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "05",
+   "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+   "text": "मम्मी... मैं नहीं! ये कार मुझे यहाँ लेकर आई!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "06",
+   "voice_id": "XrExE9yKIg1WjnnlVkGX",
+   "text": "अच्छा? तो अब ये कार तुम्हें सीधे होमवर्क तक लेकर जाएगी!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "07",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "इस कार के सेंसर सामने की चीज़ को पहचानते हैं, और कार उसके पीछे-पीछे चलती है। साइंस भी, मस्ती भी!",
+   "stability": 0.35,
+   "style": 0.45
+  },
+  {
+   "id": "08",
+   "voice_id": "jBpfuIE2acCO8z3wKNLl",
+   "text": "फॉलो-मोड कार मँगाइए, जूनियर शॉपर डॉट कॉम से। पूरे भारत में फ्री डिलीवरी!",
+   "stability": 0.35,
+   "style": 0.45
+  }
+ ]
+}
